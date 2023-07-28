@@ -1,0 +1,143 @@
+.order-grids {
+
+    .order-grid-topbar {
+        padding: 15px 20px;
+        background-color: $white;
+        border-radius: 4px;
+        border: 1px solid #eee;
+        padding-right: 15px;
+
+        .order-filter {
+
+            label {
+                display: inline-block;
+                margin: 0;
+                padding: 8px 5px 8px 0;
+                color: #999;
+                font-size: 14px;
+                font-weight: normal;
+            }
+
+            .form-control {
+                width: 100%;
+                max-width: 186px;
+                margin-right: 10px;
+                display: inline-block;
+            }
+
+            select.form-control:not([size]):not([multiple]) {
+                height: 42px;
+                font-size: 14px;
+                font-weight: 400;
+                border: 1px solid #eee;
+                padding-right: 38px;
+                background-position: center right 17px;
+                background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMS4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDE4NS4zNDQgMTg1LjM0NCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTg1LjM0NCAxODUuMzQ0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTkyLjY3MiwxNDQuMzczYy0yLjc1MiwwLTUuNDkzLTEuMDQ0LTcuNTkzLTMuMTM4TDMuMTQ1LDU5LjMwMWMtNC4xOTQtNC4xOTktNC4xOTQtMTAuOTkyLDAtMTUuMTggICAgYzQuMTk0LTQuMTk5LDEwLjk4Ny00LjE5OSwxNS4xOCwwbDc0LjM0Nyw3NC4zNDFsNzQuMzQ3LTc0LjM0MWM0LjE5NC00LjE5OSwxMC45ODctNC4xOTksMTUuMTgsMCAgICBjNC4xOTQsNC4xOTQsNC4xOTQsMTAuOTgxLDAsMTUuMThsLTgxLjkzOSw4MS45MzRDOTguMTY2LDE0My4zMjksOTUuNDE5LDE0NC4zNzMsOTIuNjcyLDE0NC4zNzN6IiBmaWxsPSIjNTA1MDUwIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);
+                background-repeat: no-repeat;
+                background-size: 10px 10px;
+
+                &:focus {
+                    text-decoration: none;
+                    outline: none;
+                    box-shadow: none;
+                }
+            }
+
+            .total-show {
+                display: inline-block;
+                color: #888;
+                font-weight: 400;
+                font-size: 14px;
+
+                @media #{$xs} {
+                    display: block;
+                    margin-top: 15px;
+                }
+            }
+        }
+
+    }
+
+}
+
+.order-item {
+    border: 1px solid #eee;
+    border-radius: 4px;
+    transition: all 0.4s ease;
+    margin-top: 30px;
+    box-shadow: 0px 0px 20px #00000012;
+    padding: 8px;
+    background: #fff;
+
+    .product-image {
+        overflow: hidden;
+        position: relative;
+
+        .count-tag {
+            background: $theme-color;
+            border-radius: 2px;
+            font-size: 12px;
+            color: #fff;
+            font-weight: bold;
+            position: absolute;
+            top: 0;
+            padding: 5px 10px;
+            left: 0;
+            z-index: 22;
+        }
+
+        img {
+            transition: all 0.4s ease;
+            max-height: 10rem;
+            object-fit: cover;
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+
+    &:hover {
+
+        .product-image {
+            .button {
+                bottom: 30px;
+                opacity: 1;
+                visibility: visible;
+            }
+
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .product-info {
+        padding: 20px;
+        background-color: $white;
+        height: 10rem;
+
+        .title {
+            a {
+                font-size: 16px;
+                font-weight: 700;
+                color: $black;
+
+                @media #{$md,$xs} {
+                    font-size: 15px;
+                }
+
+
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+        }
+
+        .price {
+
+            span {
+                font-weight: 700;
+            }
+        }
+
+    }
+}

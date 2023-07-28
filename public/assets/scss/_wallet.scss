@@ -1,0 +1,43 @@
+.wallet-form {
+
+    .title {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 40px;
+        position: relative;
+        border: 1px solid #e6e6e6;
+        border-radius: 4px 4px 0 0;
+        padding: 8px 25px;
+        color: $theme-color;
+        background-color: $white;
+    }
+}
+
+.wallet-detail{
+    .card{
+        .col-wallet-currency{
+            align-items: center;
+            
+            @media #{$xs} {
+                padding-bottom: 2em !important;
+            }   
+        }
+        .wallet-col{
+            @media #{$xs} {
+                font-size: 0.95em;;
+            }  
+        }
+    }
+    .table-transaction{
+        min-height: 25rem;
+        table{
+            white-space: nowrap;
+
+            .lni {
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+        }
+    } 
+}

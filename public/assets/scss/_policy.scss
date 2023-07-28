@@ -1,0 +1,27 @@
+.policy {
+    background-color: $white;
+    color: $black;
+    line-height: 2;
+    padding: 3em;
+    .border {
+        width: 50%;
+        margin: 3em auto;
+        border: 1px solid $theme-color !important;
+        
+    }
+
+    ol {
+        padding-left: 1em;
+        list-style-type: auto; 
+        li > ol{
+            padding-left: 3em;
+        }
+    }
+    li {
+        line-height: 3;
+    }
+
+    .no-style {
+        list-style-type: none;
+      }  
+}
